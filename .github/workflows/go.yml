@@ -22,7 +22,7 @@ jobs:
       run: go env -w GO111MODULE=auto
 
     - name: Build
-      run: go build -v ./Facade
+      run: go build -v -o bin/ ./Facade
 
     - name: Test
       run: go test -v ./Facade
